@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>EduChoice — выбор вуза (ENT, Казахстан)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<section class="panel">
+<h2>Профиль абитуриента (ENT)</h2>
+<label>Суммарный балл ENT</label>
+<input id="ent_total" type="number" placeholder="120" />
+<label>Баллы по предметам</label>
+<input id="ent_subjects" type="text" placeholder="Математика=40, Информатика=35" />
+<label>Интересы (через запятую)</label>
+<input id="interests" type="text" placeholder="IT, дизайн, экономика" />
+<label>Предпочитаемый город</label>
+<input id="city" type="text" placeholder="Алматы, Астана" />
+<div class="row">
+<label><input id="grant" type="checkbox" /> Только грант</label>
+<label><input id="hostel" type="checkbox" /> Общежитие</label>
+</div>
+<label>Максимальная плата в год (₸)</label>
+<input id="maxCost" type="number" value="2000000" />
+<div class="row">
+<button id="runBtn" class="btn">Подобрать</button>
+<button id="saveProfile" class="ghost">Экспорт профиля</button>
+</div>
+</section>
+
+<main class="panel">
+<h2>Рекомендации</h2>
+<div id="cards" class="cards"></div>
+</main>
+
+<aside class="panel">
+<h2>База вузов</h2>
+<div id="dbList"></div>
+</aside>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
